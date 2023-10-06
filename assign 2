@@ -1,0 +1,22 @@
+#SCT211-0542/2022 RUOTI SAMUEL
+
+# Input: Height in meters and weight in kilograms
+height = float(input("Please enter your height in meters: "))
+weight = float(input("Please enter your weight in kilograms: "))
+
+# Calculate BMI
+bmi = weight / (height ** 2)
+
+# Determine the BMI category
+if bmi < 18.5:
+    category = "Underweight"
+elif 18.5 <= bmi < 24.9:
+    category = "Normal Weight"
+elif 25 <= bmi < 29.9:
+    category = "Overweight"
+else:
+    category = "Obese"
+
+# Output: Display BMI value and category
+print(f"Your BMI is: {bmi:.2f}")
+print(f"You are classified as: {category}")
